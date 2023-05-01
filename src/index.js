@@ -1,3 +1,5 @@
+import './style.css';
+
 const inputArea = document.querySelector(".use-keyboard-input");
 let sondOnOff = true;
 let recognition = new webkitSpeechRecognition();

@@ -3,7 +3,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'development',
-    entry: './script.js',
+    context: __dirname + '/src',
+    entry: './index.js',
     output: {
         publicPath: '/',
         path: path.resolve(__dirname, 'build'),
@@ -18,7 +19,7 @@ module.exports = {
     ],
     devtool: 'source-map',
     devServer: {
-        port: 3006,
+        port: 3000,
         hot: true,
         historyApiFallback: { index: '/' },
         open: true,
